@@ -81,8 +81,6 @@ params:
     buttons:
       - name: 文章
         url: posts
-      - name: 標籤
-        url: tags
 
   # home-info mode
   # homeInfoParams:
@@ -144,26 +142,18 @@ menu:
       name: 文章
       url: /posts/
       weight: 10
-    - identifier: categories
-      name: 分類
-      url: /categories/
-      weight: 20
-    - identifier: tags
-      name: 標籤
-      url: /tags/
-      weight: 30
     - identifier: archives
       name: 時間軸
       url: /archives/
-      weight: 40
+      weight: 20
     - identifier: search
       name: 搜尋
       url: /search/
-      weight: 50  
+      weight: 30  
     - identifier: about
       name: 關於
       url: /about/
-      weight: 60
+      weight: 40
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true # 是否使用 pygments，程式碼高亮
