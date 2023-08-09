@@ -1,47 +1,55 @@
+# https://gohugo.io/getting-started/configuration/#privacy
+
 baseURL: "https://0range.dev/"
 title: 黑糖不是炭
 paginate: 5
 defaultContentLanguage: zh-tw # 預設語系
-theme: PaperMod
+theme: PaperMod # 主題，與 themes/PaperMod 相同
 
-enableRobotsTXT: true
+enableInlineShortcodes: true # 啟用內嵌 shortcode
+enableRobotsTXT: true # 是否產生 robots.txt
+enableEmoji: true # 是否啟用 emoji
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
-googleAnalytics: UA-123-45
 
-minify:
+googleAnalytics: G-MX4QJSY94V # Google Analytics 追蹤碼
+
+permalinks: # 設定永久連結格式
+  posts: /:year/:month/:title/
+  # post: "/:title/"
+
+minify: # 壓縮輸出
   disableXML: true
   minifyOutput: true
 
-outputs:
+outputs: # 輸出格式
   home: ["HTML", "RSS", "JSON"]
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: 黑糖不是炭
   description: "你好！我是黑糖，是一位軟體工程師，出沒於資訊社群，歡迎捕捉！喜愛寫程式來解決生活中繁瑣的事。"
-  keywords: [Blog, Portfolio, Profile]
+  keywords: [Blog, Portfolio, Profile, PaperMod, Diary]
   author: HeiTang
   images: ["/images/icon.png"]
-  DateFormat: "January 2, 2006"
+  DateFormat: "2006-01-02"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowReadingTime: true     # 顯示閱讀時間
+  ShowShareButtons: true    # 顯示分享按鈕
+  ShowPostNavLinks: true    # 顯示文章導覽(底部顯示上下篇文章)
+  ShowBreadCrumbs: true     # 顯示文章路徑
+  ShowCodeCopyButtons: true # 顯示程式碼複製按鈕
+  ShowWordCount: true       # 顯示文章字數
+  ShowRssButtonInSectionTermList: true # 顯示 RSS 按鈕
+
   UseHugoToc: true
   VisitCount: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: false
@@ -57,7 +65,7 @@ params:
     # safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "HeiTang"
+    text: "黑糖ㄉ窩"
     icon: /images/icon.png
     iconHeight: 35
 
@@ -71,9 +79,9 @@ params:
     imageHeight: 120
     imageTitle: heitang's profile
     buttons:
-      - name: Posts
+      - name: 文章
         url: posts
-      - name: Tags
+      - name: 標籤
         url: tags
 
   # home-info mode
@@ -96,24 +104,28 @@ params:
       url: "https://t.me/HeiTang"
     - name: discord
       url: "https://discordapp.com/users/463332148968030208"
+    - name: mastodon
+      url: "https://g0v.social/@heitang512"
+    - name: email	
+      url: "mailto:heitang@purr.tw"
 
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
-
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+  
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -125,29 +137,53 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - identifier: posts
+      name: 文章
+      url: /posts/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: categories
+      name: 分類
+      url: /categories/
       weight: 20
-    - identifier: archives
-      name: archives
-      url: /archives/
+    - identifier: tags
+      name: 標籤
+      url: /tags/
       weight: 30
+    - identifier: archives
+      name: 時間軸
+      url: /archives/
+      weight: 40
+    - identifier: search
+      name: 搜尋
+      url: /search/
+      weight: 50  
+    - identifier: about
+      name: 關於
+      url: /about/
+      weight: 60
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-pygmentsUseClasses: true
-markup:
-  highlight:
-    noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+# pygmentsUseClasses: true # 是否使用 pygments，程式碼高亮
+
+# markup:
+#   highlight:
+#     noClasses: true
+#     anchorLineNos: true
+#     codeFences: true
+#     guessSyntax: true
+#     lineNos: true
+#     tabWidth: 4
+#     style: monokai
+    
+    # codeFences：代码围栏功能，这个功能一般都要设为 true 的，不然很难看，就是干巴巴的-代码文字，没有颜色。
+    # guessSyntax：猜测语法，这个功能建议设置为 true, 如果你没有设置要显示的语言则会自动匹配。
+    # hl_Lines：高亮的行号，一般这个不设置，因为每个代码块我们可能希望让高亮的地方不一样。
+    # lineNoStart：行号从编号几开始，一般从 1 开始。
+    # lineNos：是否显示行号，我比较喜欢显示，所以我设置的为 true.
+    # lineNumbersInTable：使用表来格式化行号和代码,而不是 标签。这个属性一般设置为 true.
+    # noClasses：使用 class 标签，而不是内嵌的内联样式
 
 # copyright: "**[example.site](https://example.site)**"
