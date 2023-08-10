@@ -69,6 +69,23 @@
             color: #0000cd;
             padding: 2px 6px
         }
+
+        #timeBox {
+            display: inline;
+            animation: 1s blink steps(1) infinite;
+        }
+
+        @keyframes blink-smooth {
+            to {
+                color: transparent;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                color: transparent;
+            }
+        }
     </style>
 </head>
 
@@ -82,9 +99,9 @@
             * Make sure the url is correct.<br>
             * Don't panic.
         </p>
-        <div>Press any key to continue _</div><br>
-        <div>You can also try to say "meow" until something happens.
-        </div>
+        <div>Press any key to continue _ <p id="timeBox"></p>
+        </div><br>
+        <div>You can also try to say "meow" until something happens.</div><br>
     </div>
 </body>
 
@@ -92,7 +109,63 @@
 
 <!-- script to redirect to home page -->
 <script>
-    document.addEventListener('keydown', function (event) {
-        window.location.href = "/";
+    let target_string = "meow";
+    let keyword = "";
+    let word = "";
+    let count = 5; // 設定秒數
+
+    // 按下任意鍵三秒後回到首頁，如果期間有輸入 meow 則觸發 cat 函式。另外每當輸入一個字母，倒數就重置。
+    document.body.addEventListener('keypress', function (e) {
+        count = 5; // 重置倒數計時
+
+        word = String.fromCharCode(e.keyCode); // 將 keyCode 轉成字串
+        word = word.toLowerCase(); // 將字串轉成小寫
+        keyword += word; // 將字串加入 input 變數中
+        console.log(keyword);
+
+        if (keyword == target_string) {
+            keyword = "";
+            setBackgroud();
+            document.getElementById("timeBox").style.display = "none"; // 隱藏倒數計時
+            count = -1; // 將秒數設為 -1
+        }
     });
+
+    // 輸入第一個字母時，開始倒數計時
+    document.body.addEventListener('keydown', function (e) {
+        console.log(keyword);
+        if (keyword == "") {
+            countDown();
+        }
+    });
+
+    // 按下 esc 後重設輸入的內容
+    document.body.addEventListener('keyup', function (e) {
+        if (e.keyCode == 27) keyword = "";
+    });
+
+    // 倒數計時函式
+    function countDown() {
+        document.getElementById("timeBox").innerHTML = count;
+
+        // 當 count = 0 時跳轉頁面
+        if (count == 0) {
+            redirectPage();
+        }
+        count -= 1;
+        setTimeout("countDown()", 1000); // 設定每秒執行1次
+    }
+
+    // 觸發函式，將背景設成貓咪圖片
+    function setBackgroud() {
+        document.body.style.backgroundImage = "url('https://i.imgur.com/3sM1C3s.jpg')";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
+    }
+
+    // 回到首頁
+    function redirectPage() {
+        window.location.href = "/";
+    }
 </script>
