@@ -146,9 +146,13 @@ menu:
       name: 時間軸
       url: /archives/
       weight: 20
-    - identifier: search
-      name: 搜尋
-      url: /search/
+    # - identifier: search
+    #   name: 搜尋
+    #   url: /search/
+    #   weight: 30  
+    - identifier: invite-codes 
+      name: 邀請碼
+      url: /invite-codes/
       weight: 30  
     - identifier: about
       name: 關於

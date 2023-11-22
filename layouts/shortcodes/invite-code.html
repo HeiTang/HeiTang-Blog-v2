@@ -1,0 +1,163 @@
+{{- if .IsNamedParams -}}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+
+<!-- 因為 flowbite 的關係，所以要強制設定高度。 -->
+<style>
+    img {
+        height: 35px !important;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    .modal-title {
+        margin: 20px 10px !important;
+    }
+</style>
+
+<a target="_blank" title={{ .Get "name" }} class="friendurl" data-modal-target={{- .Get "modal" }} data-modal-toggle={{-
+    .Get "modal" }}>
+    <div class="frienddiv">
+        <div class="flex flex-row">
+
+            <div class="divleft">
+                {{ if eq (.Get "image_shape") "square" }}
+                <img class="imgsquare" src=/images/{{ .Get "logo_path" }} />
+                {{ else }}
+                <img class="imgcircle" src=/images/{{ .Get "logo_path" }} />
+                {{ end }}
+            </div>
+            <div class="divright">
+                <div class="friendname">{{- .Get "name" -}}</div>
+                <div class="friendinfo">
+                    <!-- <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg> -->
+                    {{- .Get "word" -}}
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<!-- Main modal -->
+<div id={{- .Get "modal" }} tabindex="-1" aria-hidden="true"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                <img src=/images/{{ .Get "logo_path" }} />
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white modal-title">
+                    {{- .Get "name" -}}
+                </h3>
+                <button type="button"
+                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide={{- .Get "modal" }}>
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 space-y-6">
+                <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
+
+                    <!-- {{ if isset .Params "alert" }} -->
+                    <div class="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
+                        role="alert">
+                        <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                        </svg>
+                        <span class="sr-only">Info</span>
+                        <div>{{- .Get "alert"}}</div>
+                    </div>
+                    <!-- {{ end }} -->
+
+                    <li>活動日期： {{- .Get "active_date"}}
+                        {{ if isset .Params "active_link" }}
+                        （
+                        <a href={{- .Get "active_link" }}
+                            class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline text-right">
+                            活動說明
+                        </a>
+                        ）
+                        {{ end }}
+                    </li>
+
+                    {{ if isset .Params "invite_code" }}
+                    <li>邀請碼：<code>{{- .Get "invite_code"}}</code></li>
+                    {{ end }}
+
+                    <li>利益揭露：
+                        <ul class="pl-5 mt-2 space-y-1 text-left text-gray-500 dark:text-gray-400">
+                            <li class="flex items-center space-x-3">
+                                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                                <span>受邀者：{{- .Get "benefit_1"}}</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5" />
+                                </svg>
+                                <span>邀請者：{{- .Get "benefit_2"}}</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="flex flex-col items-center">
+                    <div>
+                        {{ if isset .Params "invite_link" }}
+                        <button onclick='window.location.href={{- .Get "invite_link" }}' type="button"
+                            class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900 inline-flex items-center">
+                            點我申請
+                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                        {{ end }}
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <!-- {{ if isset .Params "invite_link" }}
+                <button 
+                    onclick='window.location.href={{- .Get "invite_link" }}'
+                    type="button"
+                    class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900 inline-flex items-center">
+                    立刻申請 🐟
+                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </button>
+                {{ end }} -->
+                <!-- <button data-modal-hide={{- .Get "modal" }} type="button"
+                    class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600 btn-right">Decline</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+{{- end }}
