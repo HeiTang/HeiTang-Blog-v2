@@ -1,5 +1,4 @@
 ---
-date: 2023-08-23T17:11:56+08:00
 draft: false          # 編輯模式
 summary: ""           # 文章大綱
 description: ""       # 文章描述
@@ -8,9 +7,9 @@ tags: ['']            # 標籤
 author: ['黑糖']       # 作者
 
 showtoc: false         # 顯示目錄
-tocopen: true         # 預設打開目錄
-comments: true        # 顯示評論
-hidemeta: false       # 是否隱藏 meta 訊息(發布日期、作者...etc)
+tocopen: false         # 預設打開目錄
+comments: false        # 顯示評論
+hidemeta: true       # 是否隱藏 meta 訊息(發布日期、作者...etc)
 isCJKLanguage: true   # 是否是中文(chinese,japanese,korea) 字數判斷用
 
 searchHidden: false   # 隱藏頁面不被搜尋
