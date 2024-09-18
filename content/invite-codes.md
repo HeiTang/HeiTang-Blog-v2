@@ -49,12 +49,11 @@ cover:
     name = "華南銀行 SnY"
     logo_path = "banks/008favicon-120.png"
     word = "❖ 10 萬最高 2.5% 高利活存！"
-    alert = "目前活動已結束，尚未公告新的活動。"
-    active_date = "2023/01/01 ~ 2023/06/30"
-    active_link = "https://card.hncb.com.tw/wps/portal/card/SnY0701/!ut/p/z1/jZBLC4JAFIV_Swu33uu72g0Rlg8MpLTZhMqkho6ik_39pGhVWXd34DsflwMUYqA8Gco8EWXDk2rMR2qeAlTWCgnQt31XR9Ne7UIPHc1xVIgeAH45gkD_6U8AdFofAX0igbHd4GjA8KAi8Ra65fqKauvWC_jucH49Oa5AeKrNc6AdO7OOdfK1G8cphGj7pYQSsoFxIRc8S-WsqWVxk_BTq2h6AfEbDG29j_FiVINHZncQjbTa/dz/d5/L2dBISEvZ0FBIS9nQSEh/"
+    active_date = "2024/09/02 ~ 2024/11/30"
+    active_link = "https://www.hncb.com.tw/wps/portal/HNCB/msg/co-management/pb-best-offer/c1/t1/113B24"
     invite_link = "https://netbank.hncb.com.tw/netbank/servlet/TrxDispatcher?trx=com.lb.wibc.trx.eCounter_DigitAcct&state=notice&ATYP=MGM&AID=YUxBdmVEK215a2dPRldLc0FMdStIQT09&openExternalBrowser=1"
-    benefit_1 = "300 元電子禮券（家樂福、屈臣氏或 SOGO 百貨禮券擇一）"
-    benefit_2 = "200 元電子禮券"
+    benefit_1 = "NT$200"
+    benefit_2 = "NT$100"
 >}}
 
 {{< invite-code 
@@ -125,6 +124,19 @@ cover:
 >}}
 
 {{< invite-code 
+    modal = "808-01"
+    name = "玉山銀行 e.Fingo"
+    logo_path = "banks/808favicon-1200.png"
+    word = "e.Fingo 是玉山銀行的數位金融品牌"
+    active_date = "2024/07/01 ~ 2024/09/30"
+    active_link = "https://efingo.bank/campaign/invite"
+    invite_link = "https://j3x8a.app.goo.gl/tNpqRje22MjrszKy7"
+    invite_code = "7Sa1YFTM"
+    benefit_1 = "10 點 e.Fingo 點數 + 獲得 iPhone 15 Pro 抽獎資格"
+    benefit_2 = "10 點 e.Fingo 點數 + 獲得 iPhone 15 Pro 抽獎資格"
+>}}
+
+{{< invite-code 
     modal = "812-01"
     name = "台新銀行 Richart"
     logo_path = "banks/812favicon.png"
@@ -154,7 +166,7 @@ cover:
     name = "連線銀行 LINE BanK"
     logo_path = "banks/824favicon-217.png"
     word = "❖ 5 萬最高 1.5% 高利活存！"
-    active_date = "2024/05/02 ~ 2024/07/31"
+    active_date = "2024/05/02 ~ 2024/12/31"
     active_link = "https://www.linebank.com.tw/notice/events/1187364"
     invite_link = "https://www.linebank.com.tw/R/mgm-event/invitation?mgm=101000005231"
     benefit_1 = "好像沒有ㄛ QAQ"
