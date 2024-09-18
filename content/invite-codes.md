@@ -242,6 +242,55 @@ cover:
     benefit_2 = "500 元刷卡金"
 >}}
 
+## 電子支付
+
+{{< invite-code 
+    modal = "388-04"
+    name = "全盈+PAY"
+    logo_path = "electronic_payment/388favicon-225.png"
+    word = "全盈+PAY隨享無「現」每一天"
+    active_date = "2024/01/01 ~ 2024/12/31"
+    active_link = "https://event.pluspay.com.tw/web/register.html?token=8y19ZJzlgTIppMQ/Dn06yra9sUM5/YIgKzxZlnipr05rh/uijPorpOJmD3SbSry99tgOXHw7PEq5ljbYNcvx931rVhN1yekodBAOXBijzx8hJ8QMmT6WK1sOhfo/vu2kOnH4ZLEzwAW3fhcfv3sjqg==&openExternalBrowser=1"
+    invite_link = "https://event.pluspay.com.tw/web/register.html?token=8y19ZJzlgTIppMQ/Dn06yra9sUM5/YIgKzxZlnipr05rh/uijPorpOJmD3SbSry99tgOXHw7PEq5ljbYNcvx931rVhN1yekodBAOXBijzx8hJ8QMmT6WK1sOhfo/vu2kOnH4ZLEzwAW3fhcfv3sjqg==&openExternalBrowser=1"
+\    benefit_1 = "Let's Cafe 經典美式(中)"
+    benefit_2 = "50 元全盈儲值金"
+>}}
+
+{{< invite-code 
+    modal = "389-04"
+    name = "全支付"
+    logo_path = "electronic_payment/389favicon-144.png"
+    word = "全面支持你 為何而付"
+    active_date = "2024/04/01 ~ 2024/12/31"
+    active_link = "https://marketing.pxpayplus.com/pxplus_marketing_page/event?EventId=4"
+    invite_code = "3V7T241O"
+    benefit_1 = "完成首筆不限金額及通路，享 50 點全點！"
+    benefit_2 = "50 點全點"    
+>}}
+
+{{< invite-code
+    modal = "392-04"
+    name = "icash Pay"
+    logo_path = "electronic_payment/392favicon-512.png"
+    word = "icash Pay 最好 Pay！"
+    active_date = "2024/07/01 ~ 2024/12/31"
+    invite_code = "UB12S9F3"
+    benefit_1 = "好像沒有ㄛ QAQ"
+    benefit_2 = "好像沒有ㄛ QAQ"
+>}}
+
+{{< invite-code 
+    modal = "396-04"
+    name = "街口支付"
+    logo_path = "electronic_payment/396favicon-512.png"
+    word = "街口支付，不止支付"
+    active_date = "2024/07/01 ~ 2024/12/31"
+    active_link = "https://mkt.jkopay.com/campaign/jko_referralcode"
+    invite_code = "JKO9J0VPC"
+    benefit_1 = "50 元街口幣"
+    benefit_2 = "50 元街口幣"
+>}}
+
 ## 證券 & 投資
 
 {{< invite-code 
