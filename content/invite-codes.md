@@ -203,6 +203,19 @@ cover:
 >}}
 
 {{< invite-code 
+    modal = "803-03"
+    image_shape = "square"
+    name = "聯邦賴點卡"
+    logo_path = "credit_card/803_聯邦賴點卡.png"
+    word = "國內消費 / 指定餐廳最高 5%！"
+    active_date = "2024/01/01 ~ 2024/12/31"
+    active_link = "https://card.ubot.com.tw/eCard/activity/LPM_QRcode/login.aspx"
+    invite_link = "https://card.ubot.com.tw/eCard/QRCard/ApplyUrl.aspx?KEY=99_A_2008060014_LPM__2918995560"
+    benefit_1 = "新戶核卡內 30 天內累積消費滿 888 元，即可獲得 LINE POINTS 300 點"
+    benefit_2 = "刷卡金 300 元"
+>}}
+
+{{< invite-code 
     modal = "803-02"
     image_shape = "square"
     name = "聯邦吉鶴卡悠遊晶緻卡"
