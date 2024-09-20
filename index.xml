@@ -1782,6 +1782,134 @@
     }
 &lt;/style&gt;
 
+&lt;a target=&#34;_blank&#34; title=聯邦賴點卡 class=&#34;friendurl&#34; data-modal-target=803-03 data-modal-toggle=803-03&gt;
+    &lt;div class=&#34;frienddiv&#34;&gt;
+        &lt;div class=&#34;flex flex-row&#34;&gt;
+
+            &lt;div class=&#34;divleft&#34;&gt;
+                
+                &lt;img class=&#34;imgsquare&#34; src=https://0range.dev/images/credit_card/803_%e8%81%af%e9%82%a6%e8%b3%b4%e9%bb%9e%e5%8d%a1.png /&gt;
+                
+            &lt;/div&gt;
+            &lt;div class=&#34;divright&#34;&gt;
+                &lt;div class=&#34;friendname&#34;&gt;聯邦賴點卡&lt;/div&gt;
+                &lt;div class=&#34;friendinfo&#34;&gt;
+                    國內消費 / 指定餐廳最高 5%！&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/a&gt;
+
+
+&lt;div id=803-03 tabindex=&#34;-1&#34; aria-hidden=&#34;true&#34;
+    class=&#34;fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full&#34;&gt;
+    &lt;div class=&#34;relative w-full max-w-2xl max-h-full&#34;&gt;
+        
+        &lt;div class=&#34;relative bg-white rounded-lg shadow dark:bg-gray-700&#34;&gt;
+            
+            &lt;div class=&#34;flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600&#34;&gt;
+                &lt;img src=https://0range.dev/images/credit_card/803_%e8%81%af%e9%82%a6%e8%b3%b4%e9%bb%9e%e5%8d%a1.png /&gt;
+                &lt;h3 class=&#34;text-xl font-semibold text-gray-900 dark:text-white modal-title&#34;&gt;聯邦賴點卡&lt;/h3&gt;
+                &lt;button type=&#34;button&#34;
+                    class=&#34;text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white&#34;
+                    data-modal-hide=803-03&gt;
+                    &lt;svg class=&#34;w-3 h-3&#34; aria-hidden=&#34;true&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34;
+                        viewBox=&#34;0 0 14 14&#34;&gt;
+                        &lt;path stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34;
+                            d=&#34;m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6&#34; /&gt;
+                    &lt;/svg&gt;
+                    &lt;span class=&#34;sr-only&#34;&gt;Close modal&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&#34;p-6 space-y-6&#34;&gt;
+                &lt;ul class=&#34;space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400&#34;&gt;
+
+                    
+
+                    &lt;li&gt;活動日期：2024/01/01 ~ 2024/12/31
+                        
+                        （
+                        &lt;a href=https://card.ubot.com.tw/eCard/activity/LPM_QRcode/login.aspx
+                            class=&#34;inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline text-right&#34;&gt;
+                            活動說明
+                        &lt;/a&gt;
+                        ）
+                        
+                    &lt;/li&gt;
+
+                    
+
+                    &lt;li&gt;利益揭露：
+                        &lt;ul class=&#34;pl-5 mt-2 space-y-1 text-left text-gray-500 dark:text-gray-400&#34;&gt;
+                            &lt;li class=&#34;flex items-center space-x-3&#34;&gt;
+                                &lt;svg class=&#34;flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400&#34;
+                                    aria-hidden=&#34;true&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34;
+                                    viewBox=&#34;0 0 16 12&#34;&gt;
+                                    &lt;path stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;
+                                        stroke-width=&#34;2&#34; d=&#34;M1 5.917 5.724 10.5 15 1.5&#34; /&gt;
+                                &lt;/svg&gt;
+                                &lt;span&gt;受邀者：新戶核卡內 30 天內累積消費滿 888 元，即可獲得 LINE POINTS 300 點&lt;/span&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&#34;flex items-center space-x-3&#34;&gt;
+                                &lt;svg class=&#34;flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400&#34;
+                                    aria-hidden=&#34;true&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34;
+                                    viewBox=&#34;0 0 16 12&#34;&gt;
+                                    &lt;path stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;
+                                        stroke-width=&#34;2&#34; d=&#34;M1 5.917 5.724 10.5 15 1.5&#34; /&gt;
+                                &lt;/svg&gt;
+                                &lt;span&gt;邀請者：刷卡金 300 元&lt;/span&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;div class=&#34;flex flex-col items-center&#34;&gt;
+                    &lt;div&gt;
+                        
+                        &lt;button onclick=&#39;window.location.href=&amp;#34;https://card.ubot.com.tw/eCard/QRCard/ApplyUrl.aspx?KEY=99_A_2008060014_LPM__2918995560&amp;#34;&#39; type=&#34;button&#34;
+                            class=&#34;focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900 inline-flex items-center&#34;&gt;
+                            點我申請
+                            &lt;svg class=&#34;w-3.5 h-3.5 ml-2&#34; aria-hidden=&#34;true&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;
+                                fill=&#34;none&#34; viewBox=&#34;0 0 14 10&#34;&gt;
+                                &lt;path stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;
+                                    stroke-width=&#34;2&#34; d=&#34;M1 5h12m0 0L9 1m4 4L9 9&#34; /&gt;
+                            &lt;/svg&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+            &lt;/div&gt;
+            
+            &lt;div class=&#34;flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600&#34;&gt;
+                
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;link href=&#34;https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js&#34;&gt;&lt;/script&gt;
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css&#34;&gt;
+&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;style&gt;
+    img {
+        height: 35px !important;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    .modal-title {
+        margin: 20px 10px !important;
+    }
+&lt;/style&gt;
+
 &lt;a target=&#34;_blank&#34; title=聯邦吉鶴卡悠遊晶緻卡 class=&#34;friendurl&#34; data-modal-target=803-02 data-modal-toggle=803-02&gt;
     &lt;div class=&#34;frienddiv&#34;&gt;
         &lt;div class=&#34;flex flex-row&#34;&gt;
