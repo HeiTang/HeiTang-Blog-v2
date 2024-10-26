@@ -34,6 +34,10 @@
     {{- end -}}
     {{ range $pages }}
     {{- if and (ne .Layout `search`) (ne .Layout `archives`) }}
+    <follow_challenge>
+      <feedId>72328000080536576</feedId>
+      <userId>55333320774823936</userId>
+    </follow_challenge>
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
