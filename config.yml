@@ -2,8 +2,7 @@
 
 baseURL: "https://0range.dev/"
 title: 黑糖不是炭
-pagination:
-  pagerSize: 5
+paginate: 5
 defaultContentLanguage: zh-tw # 預設語系
 theme: PaperMod # 主題，與 themes/PaperMod 相同
 
@@ -56,26 +55,6 @@ params:
   showtoc: false
   tocopen: false
 
-  socialIcons:
-    - name: twitter
-      url: "https://twitter.com/heitang512_"
-    - name: github
-      url: "https://github.com/HeiTang"
-    - name: linkedin
-      url: "www.linkedin.com/in/heitang512"
-    - name: facebook
-      url: "https://facebook.com/heitang512"
-    - name: instagram
-      url: "https://instagram.com/heitang512"
-    - name: telegram
-      url: "https://t.me/HeiTang"
-    - name: discord
-      url: "https://discordapp.com/users/463332148968030208"
-    - name: mastodon
-      url: "https://g0v.social/@heitang512"
-    - name: email	
-      url: "mailto:heitang@purr.tw"
-
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
@@ -107,6 +86,26 @@ params:
   # homeInfoParams:
   #   Title: "Hi there \U0001F44B"
   #   Content: Welcome to my blog
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/heitang512_"
+    - name: github
+      url: "https://github.com/HeiTang"
+    - name: linkedin
+      url: "www.linkedin.com/in/heitang512"
+    - name: facebook
+      url: "https://facebook.com/heitang512"
+    - name: instagram
+      url: "https://instagram.com/heitang512"
+    - name: telegram
+      url: "https://t.me/HeiTang"
+    - name: discord
+      url: "https://discordapp.com/users/463332148968030208"
+    - name: mastodon
+      url: "https://g0v.social/@heitang512"
+    - name: email	
+      url: "mailto:heitang@purr.tw"
 
   # analytics:
   #   google:
