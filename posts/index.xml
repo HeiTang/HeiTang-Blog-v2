@@ -12,6 +12,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://0range.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <follow_challenge>
+      <feedId>72328000080536576</feedId>
+      <userId>55333320774823936</userId>
+    </follow_challenge>
     <item>
       <title>Follow</title>
       <link>https://0range.dev/2024/10/follow/</link>
@@ -21,6 +25,10 @@
       <description>Just a test.</description>
     </item>
     
+    <follow_challenge>
+      <feedId>72328000080536576</feedId>
+      <userId>55333320774823936</userId>
+    </follow_challenge>
     <item>
       <title>Test_v2</title>
       <link>https://0range.dev/2023/08/test_v2/</link>
@@ -30,6 +38,10 @@
       <description></description>
     </item>
     
+    <follow_challenge>
+      <feedId>72328000080536576</feedId>
+      <userId>55333320774823936</userId>
+    </follow_challenge>
     <item>
       <title>Test Meow</title>
       <link>https://0range.dev/2023/08/test-meow/</link>
