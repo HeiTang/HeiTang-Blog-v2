@@ -128,7 +128,7 @@ cover:
     name = "玉山銀行 e.Fingo"
     logo_path = "banks/808favicon-1200.png"
     word = "e.Fingo 是玉山銀行的數位金融品牌"
-    active_date = "2024/07/01 ~ 2024/09/30"
+    active_date = "2024/10/01 ~ 2024/12/31"
     active_link = "https://efingo.bank/campaign/invite"
     invite_link = "https://j3x8a.app.goo.gl/tNpqRje22MjrszKy7"
     invite_code = "7Sa1YFTM"
@@ -141,11 +141,11 @@ cover:
     name = "台新銀行 Richart"
     logo_path = "banks/812favicon.png"
     word = "❖ 10 萬最高 3.2% 高利活存！"
-    active_date = "2024/04/25 ~ 2024/09/30"
-    active_link = "https://richart.tw/TSDIB_RichartWeb/discount/discount-details?discount=164"
+    active_date = "2024/03/15 ~ 2024/12/31"
+    active_link = "https://richart.tw/TSDIB_RichartWeb/discount/discount-details?discount=135"
     invite_link = "https://richart.tw/TSDIB_RichartWeb/RC07/RC070100?sn=STXJU&utm_source=richart&utm_medium=app&utm_campaign=richart_mgm_20230701"
-    benefit_1 = "NT$300"
-    benefit_2 = "NT$300"
+    benefit_1 = "NT$100"
+    benefit_2 = "NT$200"
 >}}
 
 {{< invite-code 
@@ -154,11 +154,11 @@ cover:
     logo_path = "banks/823favicon-192.png"
     word = "❖ 6 萬最高 6% 高利活存！"
     active_date = "2024/04/01 ~ 2024/09/30"
-    active_link = "https://www.nextbank.com.tw/announcement/45c1e31fa40000000285cadc56793797/event0215"
+    active_link = "https://www.nextbank.com.tw/announcement/45c1e31fa40000000285cadc56793797/event246"
     invite_link = "https://mgm.nextbank.com.tw/nxb/H8TU7?utm_source=app&utm_medium=link"
     invite_code = "H8TU7"
     benefit_1 = "新戶禮"
-    benefit_2 = "200 N 點"
+    benefit_2 = "100 N 點"
 >}}
 
 {{< invite-code 
@@ -181,7 +181,7 @@ cover:
     name = "富邦 J 卡"
     logo_path = "credit_card/012_富邦J卡.png"
     word = "日韓旅遊！最高 10%，但需要登錄 QAQ"
-    active_date = "2024/07/01 ~ 2024/09/30"
+    active_date = "2024/10/01 ~ 2024/12/31"
     active_link = "https://www.fubon.com/banking/event/hot/omiyagecard/index.html"
     invite_link = "https://efin.taipeifubon.com.tw/bank_bcs/c/b027447f-c0ff-47f8-aedc-ff08d5192b40"
     benefit_1 = "好像沒有ㄛ QAQ"
@@ -194,7 +194,7 @@ cover:
     name = "國泰 CUBE 卡"
     logo_path = "credit_card/014_CUBE卡.png"
     word = "四大權益自由選！指定通路 3% 無上限！"
-    active_date = "2024/07/01 ~ 2024/09/30"
+    active_date = "2024/10/01 ~ 2024/12/31"
     active_link = "https://www.cathaybk.com.tw/cathaybk/personal/product/credit-card/cards/cube#blockname05"
     invite_link = "https://cathaybk.tw/22KSN87UY"
     invite_code = ""
@@ -248,11 +248,11 @@ cover:
     name = "玉山熊本熊卡"
     logo_path = "credit_card/808_玉山熊本熊卡.jpg"
     word = "日韓旅遊最高 8.5%！"
-    active_date = "2024/07/01 ~ 2024/09/30"
+    active_date = "2024/10/01 ~ 2024/12/31"
     active_link = "https://www.esunbank.com/zh-tw/personal/credit-card/intro/bank-card/kumamon_card#5"
     invite_link = "https://card.esunbank.com.tw/EsunCreditweb/txnproc/selApplyCard?PRJCD=APYCRD0069&param=241720608186959"
     benefit_1 = "好像沒有ㄛ QAQ"
-    benefit_2 = "500 元刷卡金"
+    benefit_2 = "300 元刷卡金"
 >}}
 
 ## 電子支付
