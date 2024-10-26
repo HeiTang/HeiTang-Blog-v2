@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Test on 黑糖不是炭</title>
+    <title>test on 黑糖不是炭</title>
     <link>https://0range.dev/categories/test/</link>
-    <description>Recent content in Test on 黑糖不是炭</description>
+    <description>Recent content in test on 黑糖不是炭</description>
     <image>
       <title>黑糖不是炭</title>
       <url>https://0range.dev/images/icon.png</url>
@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 08 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://0range.dev/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://0range.dev/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Follow</title>
+      <link>https://0range.dev/2024/10/follow/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://0range.dev/2024/10/follow/</guid>
+      <description>Just a test.</description>
+    </item>
+    
     <item>
       <title>Test Meow</title>
       <link>https://0range.dev/2023/08/test-meow/</link>
