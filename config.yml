@@ -72,15 +72,15 @@ params:
   # profile-mode
   profileMode:
     enabled: True # needs to be explicitly set
-    title: 黑糖
-    subtitle: "橘貓不胖，只是蓬鬆了點！"
+    title: 黑糖不是炭
+    subtitle: "橘貓不胖，只是蓬鬆了點！ヽ(=^･ω･^=)丿"
     imageUrl: "/images/profile.jpeg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: heitang's profile
     buttons:
-      - name: 文章
-        url: posts
+      - name: ＃勿毛色歧視
+        url: about
 
   # home-info mode
   # homeInfoParams:
