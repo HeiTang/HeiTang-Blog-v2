@@ -153,7 +153,7 @@ cover:
     name = "將來銀行 Next Bank"
     logo_path = "banks/823favicon-192.png"
     word = "❖ 6 萬最高 6% 高利活存！"
-    active_date = "2024/04/01 ~ 2024/09/30"
+    active_date = "2024/10/01 ~ 2024/12/31"
     active_link = "https://www.nextbank.com.tw/announcement/45c1e31fa40000000285cadc56793797/event246"
     invite_link = "https://mgm.nextbank.com.tw/nxb/H8TU7?utm_source=app&utm_medium=link"
     invite_code = "H8TU7"
@@ -200,6 +200,19 @@ cover:
     invite_code = ""
     benefit_1 = "200 小樹點"
     benefit_2 = "200 小樹點"
+>}}
+
+{{< invite-code 
+    modal = "081-02"
+    image_shape = "square"
+    name = "匯豐信用卡"
+    logo_path = "credit_card/081_滙豐旅人無限卡.png"
+    word = "旅人無限卡 海外消費 NT10元 = 1 哩"
+    active_date = "2024/10/01 ~ 2024/12/31"
+    active_link = "https://www.hsbc.com.tw/credit-cards/offers/acquisition/"
+    invite_link = "https://card.apply.hsbc.com.tw/hsbcoa/oaadd?BannerID=MGMplatform&mgmCode=oL6DNXhJ&openExternalBrowser=1"
+    benefit_1 = "新戶禮 - 完成指定任務享 500 元刷卡金（Live+現金回饋卡）或最高 8,000 哩（匯豐旅人卡）"
+    benefit_2 = "刷卡金 1,000 元"
 >}}
 
 {{< invite-code 
