@@ -1,6 +1,6 @@
 # https://gohugo.io/getting-started/configuration/#privacy
 
-baseURL: "https://0range.dev/"
+baseURL: "https://purr.tw/"
 title: 黑糖不是炭
 paginate: 5
 defaultContentLanguage: zh-tw # 預設語系

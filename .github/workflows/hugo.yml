@@ -39,5 +39,5 @@ jobs:
         with:
           github_token: ${{ secrets.HUGO_DEPLOY_TOKEN }}
           publish_dir: ./public
-          cname: 0range.dev
+          cname: purr.tw
           commit_message: ${{ github.event.head_commit.message }}
