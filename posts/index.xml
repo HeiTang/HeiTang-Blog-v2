@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>文章 on 黑糖不是炭</title>
-    <link>https://0range.dev/posts/</link>
+    <link>https://purr.tw/posts/</link>
     <description>Recent content in 文章 on 黑糖不是炭</description>
     <image>
       <title>黑糖不是炭</title>
-      <url>https://0range.dev/images/icon.png</url>
-      <link>https://0range.dev/images/icon.png</link>
+      <url>https://purr.tw/images/icon.png</url>
+      <link>https://purr.tw/images/icon.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://0range.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://purr.tw/posts/index.xml" rel="self" type="application/rss+xml" />
     <follow_challenge>
       <feedId>72328000080536576</feedId>
       <userId>55333320774823936</userId>
     </follow_challenge>
     <item>
       <title>Follow</title>
-      <link>https://0range.dev/2024/10/follow/</link>
+      <link>https://purr.tw/2024/10/follow/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://0range.dev/2024/10/follow/</guid>
+      <guid>https://purr.tw/2024/10/follow/</guid>
       <description>Just a test.</description>
     </item>
     
@@ -31,10 +31,10 @@
     </follow_challenge>
     <item>
       <title>Test_v2</title>
-      <link>https://0range.dev/2023/08/test_v2/</link>
+      <link>https://purr.tw/2023/08/test_v2/</link>
       <pubDate>Wed, 09 Aug 2023 17:46:37 +0800</pubDate>
       
-      <guid>https://0range.dev/2023/08/test_v2/</guid>
+      <guid>https://purr.tw/2023/08/test_v2/</guid>
       <description></description>
     </item>
     
@@ -44,10 +44,10 @@
     </follow_challenge>
     <item>
       <title>Test Meow</title>
-      <link>https://0range.dev/2023/08/test-meow/</link>
+      <link>https://purr.tw/2023/08/test-meow/</link>
       <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://0range.dev/2023/08/test-meow/</guid>
+      <guid>https://purr.tw/2023/08/test-meow/</guid>
       <description>Just a test.</description>
     </item>
     
