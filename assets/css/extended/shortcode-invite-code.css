@@ -87,6 +87,32 @@
     color: var(--primary);
 }
 
+.modal-title {
+    margin: 20px 10px !important;
+}
+
+.imgsquare, .imgcircle {
+    max-width: 56px;
+    max-height: 56px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .imgsquare, .imgcircle {
+        max-width: 46px;
+        max-height: 46px;
+    }
+}
+
+@media (max-width: 600px) {
+    .imgsquare, .imgcircle {
+        max-width: 36px;
+        max-height: 36px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .friendinfo {
         display: none;

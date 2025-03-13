@@ -9,20 +9,12 @@
     img {
         height: 35px !important;
     }
-
-    .text-right {
-        text-align: right !important;
-    }
-
-    .modal-title {
-        margin: 20px 10px !important;
-    }
 </style>
 
 <a target="_blank" title={{ .Get "name" }} class="friendurl" data-modal-target={{- .Get "modal" }} data-modal-toggle={{-
     .Get "modal" }}>
     <div class="frienddiv">
-        <div class="flex flex-row">
+        <div class="flex flex-row items-center flex-nowrap">
 
             <div class="divleft">
                 {{ if eq (.Get "image_shape") "square" }}
@@ -31,7 +23,7 @@
                 <img class="imgcircle" src=/images/{{ .Get "logo_path" }} />
                 {{ end }}
             </div>
-            <div class="divright">
+            <div class="divright justify-start ">
                 <div class="friendname">{{- .Get "name" -}}</div>
                 <div class="friendinfo">
                     <!-- <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -52,8 +44,12 @@
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <!-- Modal header -->
             <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                <img src=/images/{{ .Get "logo_path" }} />
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white modal-title">
+                {{ if eq (.Get "image_shape") "square" }}
+                <img class="imgsquare self-center" src=/images/{{ .Get "logo_path" }} />
+                {{ else }}
+                <img class="imgcircle self-center" src=/images/{{ .Get "logo_path" }} />
+                {{ end }}
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white modal-title self-center">
                     {{- .Get "name" -}}
                 </h3>
                 <button type="button"
@@ -71,24 +67,31 @@
             <div class="p-6 space-y-6">
                 <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
 
-                    <!-- {{ if isset .Params "alert" }} -->
-                    <div class="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
-                        role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path
-                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                    {{ $range := split (.Get "active_date") "~" }}
+                    {{ $startStr := strings.TrimSpace (index $range 0) }}
+                    {{ $endStr := "" }}
+                    {{ if eq (len $range) 2 }}
+                        {{ $endStr = strings.TrimSpace (index $range 1) }}
+                    {{ end }}
+
+                    {{/* 嘗試將結束日期 $endStr 解析為 2006/01/02 格式 */}}
+                    {{ $endDate := (replace $endStr "/" "-") | time }}
+
+                    {{ if and ($endStr) (now.After $endDate) }}
+                    <div class="flex items-center p-4 mb-4 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800" role="alert">
+                        <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
                         </svg>
-                        <span class="sr-only">Info</span>
-                        <div>{{- .Get "alert"}}</div>
+                        <span class="sr-only">Expired Info</span>
+                        <div>目前活動已結束，尚未公告新的活動。</div>
                     </div>
-                    <!-- {{ end }} -->
+                    {{ end }}
 
                     <li>活動日期： {{- .Get "active_date"}}
                         {{ if isset .Params "active_link" }}
                         （
                         <a href={{- .Get "active_link" }}
-                            class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline text-right">
+                            class="inline-flex items-center font-medium text-blue-600 dark:text-blue-500 hover:underline">
                             活動說明
                         </a>
                         ）
