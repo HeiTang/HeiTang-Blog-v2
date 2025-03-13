@@ -10,6 +10,11 @@ on:
       - main
   workflow_dispatch:
     # manual run
+    inputs:
+      hugoVersion:
+        description: "Hugo Version"
+        required: false
+        default: "0.125.7"
 
 jobs:
   deploy:
@@ -29,7 +34,7 @@ jobs:
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.112.4'
+          hugo-version: '0.125.7'
 
       - name: Build
         run: hugo --buildDrafts --gc --verbose --minify
