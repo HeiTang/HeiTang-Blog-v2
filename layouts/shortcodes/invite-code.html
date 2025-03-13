@@ -68,10 +68,10 @@
                 <ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
 
                     {{ $range := split (.Get "active_date") "~" }}
-                    {{ $startStr := strings.TrimSpace (index $range 0) }}
+                    {{ $startStr := trim (index $range 0) " \t\r\n" }}
                     {{ $endStr := "" }}
                     {{ if eq (len $range) 2 }}
-                        {{ $endStr = strings.TrimSpace (index $range 1) }}
+                        {{ $endStr = trim (index $range 1) " \t\r\n" }}
                     {{ end }}
 
                     {{/* 嘗試將結束日期 $endStr 解析為 2006/01/02 格式 */}}
