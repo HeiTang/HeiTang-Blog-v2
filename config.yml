@@ -1,6 +1,6 @@
 # https://gohugo.io/getting-started/configuration/#privacy
 
-baseURL: "https://purr.tw/"
+baseURL: "https://heitang.github.io/HeiTang-Blog-v2/"
 title: 黑糖不是炭
 paginate: 5
 defaultContentLanguage: zh-tw # 預設語系
